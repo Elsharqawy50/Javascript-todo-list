@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #FF5331;
+}
+.container {
+  width: 38%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccc6;
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 8px;
+
+}
+.container #input {
+border: none;
+width: 85%;
+height: 30px;
+border-radius: 5px;
+outline: none;
+}
+.container #add {
+  border: none;
+  color: white;
+  background-color: #FF5331;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tasks {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc6;
+  padding: 15px 15px 0px 15px;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+.tasks:empty{
+  display: none;
+}
+.tasks .inner {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.tasks .inner span {
+  font-weight: bold;
+}
+.tasks .inner #delete {
+  border: none;
+  color: white;
+  background-color: #FF5331;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
